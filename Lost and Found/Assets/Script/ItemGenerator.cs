@@ -10,6 +10,7 @@ public class ItemGenerator : MonoBehaviour
         if (ItemGenerator.Instance == null)
         {
             ItemGenerator.Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -17,11 +18,11 @@ public class ItemGenerator : MonoBehaviour
         }
     }
 
-    public List<GameObject> items;
+    public GameObject[] items;
     public GameObject getRandomItem()
     {
-        int index = Random.Range(0, items.Count);
-        GameObject item = items[index];
+        int index = Random.Range(0, items.Length);
+        GameObject item = Instantiate(items[index]);
 
         return item;
     }

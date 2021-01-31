@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BackButton : MonoBehaviour
+public class BinButton : MonoBehaviour
 {
-    public GameObject panel;
+    public GameObject storageBin;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,8 +17,8 @@ public class BackButton : MonoBehaviour
         
     }
 
-    public void Back()
+    public void OpenBin()
     {
-        panel.SetActive(false);
+        storageBin.SetActive(true);
     }
 }

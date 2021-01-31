@@ -21,9 +21,25 @@ public class DataManager : MonoBehaviour
 
     public int day;
     public GameObject selectedItem;
+    public GameObject currentStudent;
+    public List<GameObject> items;
+    public List<GameObject> students;
 
     public void Initialize()
     {
         day = 1;
+    }
+
+    public void addItems(List<GameObject> newItems)
+    {
+        foreach (GameObject item in newItems)
+        {
+            items.Add(item);
+        }
+    }
+
+    public void setStudents(List<GameObject> students)
+    {
+        this.students = students;
     }
 }
