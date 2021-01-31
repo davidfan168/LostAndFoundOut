@@ -27,7 +27,7 @@ public class DataManager : MonoBehaviour
 
     public void Initialize()
     {
-        day = 1;
+        day = 2;
     }
 
     public void addItems(List<GameObject> newItems)

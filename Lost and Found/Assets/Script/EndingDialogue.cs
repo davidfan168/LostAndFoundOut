@@ -8,10 +8,13 @@ public class EndingDialogue : MonoBehaviour
     public Coroutine co;
     public Text displayText;
     public GameObject characterButton;
-
+    public GameObject storageButton;
     private enum MessageState { Empty, Typing, Complete }
     private MessageState currentState;
     private string sentence;
+
+
+    public GameEvent leaving;
 
     private void Awake()
     {
@@ -40,7 +43,9 @@ public class EndingDialogue : MonoBehaviour
         else
         {
             currentState = MessageState.Empty;
-            characterButton.GetComponent<Button>().interactable = true;
+            characterButton.GetComponent<Button>().enabled = true;
+            storageButton.GetComponent<Button>().enabled = true;
+            leaving.Raise();
             gameObject.SetActive(false);
         }
     }

@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6834352898718689434
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1197479758680678416, guid: b7c6e0a9a07016342853d9347ef61716,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d758d7fc6db2b13479776cc69e35cc82,
+        type: 3}
+    - target: {fileID: 5854156258420265045, guid: b7c6e0a9a07016342853d9347ef61716,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854156258420265045, guid: b7c6e0a9a07016342853d9347ef61716,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854156258420265045, guid: b7c6e0a9a07016342853d9347ef61716,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854156258420265045, guid: b7c6e0a9a07016342853d9347ef61716,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854156258420265045, guid: b7c6e0a9a07016342853d9347ef61716,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854156258420265045, guid: b7c6e0a9a07016342853d9347ef61716,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854156258420265045, guid: b7c6e0a9a07016342853d9347ef61716,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854156258420265045, guid: b7c6e0a9a07016342853d9347ef61716,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854156258420265045, guid: b7c6e0a9a07016342853d9347ef61716,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854156258420265045, guid: b7c6e0a9a07016342853d9347ef61716,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854156258420265045, guid: b7c6e0a9a07016342853d9347ef61716,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854156258420265045, guid: b7c6e0a9a07016342853d9347ef61716,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -53
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854156258420265045, guid: b7c6e0a9a07016342853d9347ef61716,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -57.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854156258420265045, guid: b7c6e0a9a07016342853d9347ef61716,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -125.26709
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854156258420265045, guid: b7c6e0a9a07016342853d9347ef61716,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -161.80244
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854156258420265045, guid: b7c6e0a9a07016342853d9347ef61716,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854156258420265045, guid: b7c6e0a9a07016342853d9347ef61716,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854156258420265045, guid: b7c6e0a9a07016342853d9347ef61716,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854156258420265045, guid: b7c6e0a9a07016342853d9347ef61716,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854156258420265045, guid: b7c6e0a9a07016342853d9347ef61716,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854156258420265045, guid: b7c6e0a9a07016342853d9347ef61716,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5937144746812844176, guid: b7c6e0a9a07016342853d9347ef61716,
+        type: 3}
+      propertyPath: m_Name
+      value: 2 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253417351042852356, guid: b7c6e0a9a07016342853d9347ef61716,
+        type: 3}
+      propertyPath: properties.Array.data[0]
+      value: There was a slight scratch on my lens
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b7c6e0a9a07016342853d9347ef61716, type: 3}

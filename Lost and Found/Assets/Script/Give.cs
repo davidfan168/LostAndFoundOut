@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class Give : MonoBehaviour
 {
     public Text displayText;
-    public GameEvent leaving;
     public void OfferObject()
     {
         if(DataManager.Instance.selectedItem == null)
@@ -22,11 +21,22 @@ public class Give : MonoBehaviour
 
             if (currentStudent.lostItem == selectedItem)
             {
-                GameObject.FindGameObjectWithTag("CharacterButton").GetComponent<CharacterButton>().EndSuccess("Thanks! I finally found it");
+                GameObject.FindGameObjectWithTag("CharacterButton").GetComponent<CharacterButton>().EndSuccess("Thanks! I finally found it.");
+                DataManager.Instance.items.Remove(DataManager.Instance.selectedItem);
+                Destroy(selectedItem);
             }
             else
             {
-                GameObject.FindGameObjectWithTag("CharacterButton").GetComponent<CharacterButton>().EndFailure("Well, I guess I will just take this anyways");
+                if (currentStudent.honest)
+                {
+                    GameObject.FindGameObjectWithTag("CharacterButton").GetComponent<CharacterButton>().EndFailure("This " + DataManager.Instance.selectedItem.name + " is not mine. Seems like you are really bad with your job.");
+                }
+                else
+                {
+                    GameObject.FindGameObjectWithTag("CharacterButton").GetComponent<CharacterButton>().EndFailure("Well, I guess I can just take this anyways.");
+                    DataManager.Instance.items.Remove(DataManager.Instance.selectedItem);
+                    Destroy(selectedItem);
+                }
             }
         }
     }

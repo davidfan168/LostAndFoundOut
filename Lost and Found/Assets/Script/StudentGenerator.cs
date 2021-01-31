@@ -86,8 +86,10 @@ public class StudentGenerator : MonoBehaviour
         studentInfo.name = name;
 
         studentInfo.head = headImages[Random.Range(0, headImages.Count)];
-        studentInfo.head = hairImages[Random.Range(0, hairImages.Count)];
-        studentInfo.head = faceImages[Random.Range(0, faceImages.Count)];
+        studentInfo.hair = hairImages[Random.Range(0, hairImages.Count)];
+        studentInfo.face = faceImages[Random.Range(0, faceImages.Count)];
+
+        studentInfo.questionsLeft = Random.Range(2, 6);
 
         return student;
     }

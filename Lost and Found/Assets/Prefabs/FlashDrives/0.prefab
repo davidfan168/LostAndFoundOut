@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3075174710423210648
+--- !u!1 &8991340088514589426
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,25 +8,25 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3024143726136291933}
-  - component: {fileID: 126805490601772225}
-  - component: {fileID: 7518623053923779096}
-  - component: {fileID: 2044808011515495436}
-  - component: {fileID: 3196546360705879595}
+  - component: {fileID: 9195635230159538743}
+  - component: {fileID: 6316333510584777899}
+  - component: {fileID: 4484772561902566002}
+  - component: {fileID: 5335078058467490918}
+  - component: {fileID: 8806497484154041921}
   m_Layer: 5
-  m_Name: Image
+  m_Name: 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &3024143726136291933
+--- !u!224 &9195635230159538743
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3075174710423210648}
+  m_GameObject: {fileID: 8991340088514589426}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -36,24 +36,24 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -49.3, y: 11.400002}
-  m_SizeDelta: {x: -183.81558, y: -36.790726}
+  m_AnchoredPosition: {x: 34.45, y: -18.97}
+  m_SizeDelta: {x: -368.1868, y: -264.9584}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &126805490601772225
+--- !u!222 &6316333510584777899
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3075174710423210648}
+  m_GameObject: {fileID: 8991340088514589426}
   m_CullTransparentMesh: 0
---- !u!114 &7518623053923779096
+--- !u!114 &4484772561902566002
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3075174710423210648}
+  m_GameObject: {fileID: 8991340088514589426}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d88756eb781fa2b4d809486e68f2c044, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 47a324e8a0bb2a84182ee4cdec77c4e3, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -76,30 +76,32 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2044808011515495436
+--- !u!114 &5335078058467490918
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3075174710423210648}
+  m_GameObject: {fileID: 8991340088514589426}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d970051774033d4383c10268b1d575b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: 5
-  itemName: Water Bottle
+  item: 6
+  itemName: Flash Drive
+  date: 
   location: 
-  color: Blue
+  color: Black
+  type: Retractable design
   properties: []
---- !u!114 &3196546360705879595
+--- !u!114 &8806497484154041921
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3075174710423210648}
+  m_GameObject: {fileID: 8991340088514589426}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30df052099b64e94b83d56ed96567105, type: 3}

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler
+public class DraggableItem : MonoBehaviour, IPointerDownHandler, IDragHandler
 {
     public Canvas canvas;
     private RectTransform rectTransform;
@@ -20,7 +20,7 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler
         displayImg = GameObject.FindGameObjectWithTag("DisplayImage").GetComponent<Image>();
     }
 
-    public void OnBeginDrag(PointerEventData eventData)
+    public void OnPointerDown(PointerEventData eventData)
     {
         DataManager.Instance.selectedItem = gameObject;
         displayImg.sprite = img.sprite;

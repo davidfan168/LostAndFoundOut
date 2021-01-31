@@ -11,6 +11,7 @@ public class CharacterSpriteTransition : MonoBehaviour
 
     public void UpdateImage()
     {
+        Debug.Log("Updating Image");
         Student currentStudent = DataManager.Instance.currentStudent.GetComponent<Student>();
         head.sprite = currentStudent.head;
         hair.sprite = currentStudent.hair;

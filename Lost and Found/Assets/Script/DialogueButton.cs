@@ -8,6 +8,7 @@ public class DialogueButton : MonoBehaviour
     public Coroutine co;
     public Text displayText;
     public GameObject characterButton;
+    public GameObject storageButton;
 
     private enum MessageState { Empty, Typing, Complete }
     private MessageState currentState;
@@ -33,15 +34,13 @@ public class DialogueButton : MonoBehaviour
         }
         else if (currentState == MessageState.Typing)
         {
-            displayText.text = sentence;
-            currentState = MessageState.Complete;
-            StopCoroutine(co);
+            //displayText.text = sentence;
+            //currentState = MessageState.Complete;
+            //StopCoroutine(co);
         }
         else
         {
-            currentState = MessageState.Empty;
-            characterButton.GetComponent<Button>().interactable = true;
-            gameObject.SetActive(false);
+            Leave();
         }
     }
 
@@ -66,5 +65,18 @@ public class DialogueButton : MonoBehaviour
         }
             currentState = MessageState.Complete;
         yield return null;
+    }
+
+    public void OnLeaving()
+    {
+        Leave();
+    }
+
+    private void Leave()
+    {
+        currentState = MessageState.Empty;
+        characterButton.GetComponent<Button>().enabled = true;
+        storageButton.GetComponent<Button>().enabled = true;
+        gameObject.SetActive(false);
     }
 }

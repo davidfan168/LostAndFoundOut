@@ -10,4 +10,5 @@ public class Student : MonoBehaviour
     public Sprite hair;
     public Sprite face;
     public bool honest;
+    public int questionsLeft;
 }
