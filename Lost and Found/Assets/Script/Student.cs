@@ -9,6 +9,7 @@ public class Student : MonoBehaviour
     public Sprite head;
     public Sprite hair;
     public Sprite face;
+    public Sprite body;
     public bool honest;
     public int questionsLeft;
 }

@@ -8,6 +8,7 @@ public class CharacterSpriteTransition : MonoBehaviour
     public Image head;
     public Image hair;
     public Image face;
+    public Image body;
 
     public void UpdateImage()
     {
@@ -16,5 +17,6 @@ public class CharacterSpriteTransition : MonoBehaviour
         head.sprite = currentStudent.head;
         hair.sprite = currentStudent.hair;
         face.sprite = currentStudent.face;
+        body.sprite = currentStudent.body;
     }
 }

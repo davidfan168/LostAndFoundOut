@@ -9,6 +9,7 @@ public class DraggableItem : MonoBehaviour, IPointerDownHandler, IDragHandler
     public Canvas canvas;
     private RectTransform rectTransform;
     private Image img;
+    private GameEvent startDrag;
 
     private Image displayImg;
 
@@ -18,12 +19,14 @@ public class DraggableItem : MonoBehaviour, IPointerDownHandler, IDragHandler
         img = gameObject.GetComponent<Image>();
         img.alphaHitTestMinimumThreshold = 0.01f;
         displayImg = GameObject.FindGameObjectWithTag("DisplayImage").GetComponent<Image>();
+        this.startDrag = DataManager.Instance.startDrag;
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
         DataManager.Instance.selectedItem = gameObject;
         displayImg.sprite = img.sprite;
+        startDrag.Raise();
     }
 
     public void OnDrag(PointerEventData eventData)

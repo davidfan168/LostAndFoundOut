@@ -3,27 +3,18 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DayGenerator : MonoBehaviour
 {
-    public static DayGenerator Instance;
-    private void Awake()
-    {
-        if (DayGenerator.Instance == null)
-        {
-            DayGenerator.Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
 
     List<GameObject> students = new List<GameObject>();
     List<GameObject> items = new List<GameObject>();
     public Canvas canvas;
     public GameObject bin;
+    public GameObject btn1;
+    public GameObject btn2;
+    public GameObject btn3;
 
     void Start()
     {
@@ -33,7 +24,7 @@ public class DayGenerator : MonoBehaviour
     private void GenerateDay()
     {
         int day = DataManager.Instance.day;
-
+        Debug.Log("starting to generate");
         if (day == 1)
         {
             GenerateFirstDay();
@@ -68,6 +59,7 @@ public class DayGenerator : MonoBehaviour
 
     private void GenerateSecondDay()
     {
+        Debug.Log("Generating Day 2");
         int trueStudentCount = 3;
         int fakeItemCount = 2;
         int lyingStudentCount = 2;
@@ -96,7 +88,7 @@ public class DayGenerator : MonoBehaviour
     private void GenerateThirdDay()
     {
         int trueStudentCount = 3;
-        int fakeItemCount = 2;
+        int fakeItemCount = 3;
         int lyingStudentCount = 2;
 
         for (int i = 0; i < trueStudentCount; i++)
@@ -113,6 +105,9 @@ public class DayGenerator : MonoBehaviour
         {
             GenerateLyingStudentMedium();
         }
+        btn1.SetActive(true);
+        btn2.SetActive(true);
+        btn3.SetActive(true);
 
         StoreGeneratedEntities();
         InitializeStorageCabin();
@@ -276,6 +271,7 @@ public class DayGenerator : MonoBehaviour
     {
         DataManager.Instance.day += 1;
         Debug.Log("Day: " + DataManager.Instance.day);
-        GenerateDay();
+
+        SceneManager.LoadScene("LostAndFound");
     }
 }

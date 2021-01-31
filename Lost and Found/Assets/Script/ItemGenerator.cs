@@ -78,7 +78,8 @@ public class ItemGenerator : MonoBehaviour
         int index = UnityEngine.Random.Range(0, locations.Length);
         item.GetComponent<Item>().location = locations[index];
 
-        item.GetComponent<Item>().date = startDate.AddDays(UnityEngine.Random.Range(0, 7)).ToString("yyyy-MM-dd");
+        int d = DataManager.Instance.day - 1;
+        item.GetComponent<Item>().date = startDate.AddDays(UnityEngine.Random.Range(0 + 7 * d, 7 + 7 * d)).ToString("yyyy-MM-dd");
     }
 
 }

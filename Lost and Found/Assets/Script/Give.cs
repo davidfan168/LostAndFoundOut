@@ -29,7 +29,7 @@ public class Give : MonoBehaviour
             {
                 if (currentStudent.honest)
                 {
-                    GameObject.FindGameObjectWithTag("CharacterButton").GetComponent<CharacterButton>().EndFailure("This " + DataManager.Instance.selectedItem.name + " is not mine. Seems like you are really bad with your job.");
+                    GameObject.FindGameObjectWithTag("CharacterButton").GetComponent<CharacterButton>().EndFailure("This " + DataManager.Instance.selectedItem.GetComponent<Item>().itemName + " is not mine. Seems like you are really bad with your job.");
                 }
                 else
                 {

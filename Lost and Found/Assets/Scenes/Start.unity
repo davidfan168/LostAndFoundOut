@@ -297,6 +297,7 @@ MonoBehaviour:
   currentStudent: {fileID: 0}
   items: []
   students: []
+  startDrag: {fileID: 11400000, guid: 3e5ba973870d53241bde0cc8163ca187, type: 2}
 --- !u!114 &332922266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,6 +316,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: bd21b193481931f4ab4fbbe8da3b76d6, type: 3}
   - {fileID: 21300000, guid: c032fb963003328429c5a6710f1a3b6f, type: 3}
   - {fileID: 21300000, guid: 05cff2fb5a2df8f44807feb40914539e, type: 3}
+  - {fileID: 21300000, guid: f74901957e06a294599d33b9d48ad0a5, type: 3}
+  - {fileID: 21300000, guid: 651ee568fa19b164c9adc7a82d513f0a, type: 3}
+  - {fileID: 21300000, guid: 35c62689398bbce4bae9f7c7c49f62d3, type: 3}
   hairImages:
   - {fileID: 21300000, guid: 644cbff308e850541b8b972a71b54394, type: 3}
   - {fileID: 21300000, guid: 5c92424a0e638b846bef3b9c6b8e0284, type: 3}
@@ -328,6 +332,19 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b3a04954611858140ae0032abbdafb06, type: 3}
   - {fileID: 21300000, guid: 3b65e8a044ab9704b87a6083b172e649, type: 3}
   - {fileID: 21300000, guid: 5f757d8fda9162842bfd55537f59ad85, type: 3}
+  - {fileID: 21300000, guid: 63fd8a12b5986d74185480b572633bb3, type: 3}
+  - {fileID: 21300000, guid: d2a0a665f53c4b54196d98f7e1e0a64b, type: 3}
+  - {fileID: 21300000, guid: f71855b89c7c7334e803d8d839e7b29c, type: 3}
+  - {fileID: 21300000, guid: c1aa3f35092f9f845ac0dbd282239cef, type: 3}
+  - {fileID: 21300000, guid: f5b41ff470bce634c8f4ed2fe04b16e8, type: 3}
+  - {fileID: 21300000, guid: 3f465fc548e0ad848b5837e7ede7ad94, type: 3}
+  - {fileID: 21300000, guid: 0845dba78d494264885be4d740703d54, type: 3}
+  - {fileID: 21300000, guid: 25b10f4e168f88a41983d70500315cd9, type: 3}
+  - {fileID: 21300000, guid: 129e236cd34eb2346a517dc178906372, type: 3}
+  - {fileID: 21300000, guid: a8373e4c543df694a8f322a4987a374d, type: 3}
+  - {fileID: 21300000, guid: adcab5af62b83304fa9ad19ece0ccc71, type: 3}
+  - {fileID: 21300000, guid: 9312574b45ffe6e44b382e4417687360, type: 3}
+  - {fileID: 21300000, guid: 4a7c1ddf3a7ae8d40a895d2cf8d8d750, type: 3}
   faceImages:
   - {fileID: 21300000, guid: 30df78ec12da49048b205d269633b13a, type: 3}
   - {fileID: 21300000, guid: d0f1446170fa2d24380985aa805573cd, type: 3}
@@ -341,6 +358,33 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ba639b4d079fa4f45be5f92489071d27, type: 3}
   - {fileID: 21300000, guid: 1a9ae0c51748c124ba22291ab723fe87, type: 3}
   - {fileID: 21300000, guid: 0699f96cadc507c44937dbb451c84ccc, type: 3}
+  - {fileID: 21300000, guid: d36339d787fea8c4ba1150bff5a97b08, type: 3}
+  - {fileID: 21300000, guid: b4c38f487bd744642bf8406b68d88a50, type: 3}
+  - {fileID: 21300000, guid: 6a6ccec97175ee248b8d0579170943b6, type: 3}
+  - {fileID: 21300000, guid: a49e9455313f048489e894b4e30b56cf, type: 3}
+  - {fileID: 21300000, guid: b330c3d1e36bcd148ba24dc8d3c74e0f, type: 3}
+  - {fileID: 21300000, guid: 322a963e51854074f87e387cebb725fe, type: 3}
+  - {fileID: 21300000, guid: 6dea3afe0376df14d99cdc7562ffa95f, type: 3}
+  - {fileID: 21300000, guid: 0577c8fa234aca34d97b09e39fd37150, type: 3}
+  - {fileID: 21300000, guid: c324772aca3210d45a859ce0f10526c1, type: 3}
+  - {fileID: 21300000, guid: 36836652092d963479cb581dbbd36040, type: 3}
+  - {fileID: 21300000, guid: 6d692eb7e705ed041ba62d69489e009f, type: 3}
+  - {fileID: 21300000, guid: 57794b371c306374d80fd944d03e18ed, type: 3}
+  bodyImages:
+  - {fileID: 21300000, guid: 8957bf3bb552e6b439219f80b6cb8ae4, type: 3}
+  - {fileID: 21300000, guid: 3d2c32ac5ef63714c94e8ed8b7ffdd14, type: 3}
+  - {fileID: 21300000, guid: 0b3ebd9f1d2c4e347836dbc9c08f0232, type: 3}
+  - {fileID: 21300000, guid: 256755ec0e7372a41b672674c1891f27, type: 3}
+  - {fileID: 21300000, guid: 36e2c0324a5fcd14b964e6037e5f213c, type: 3}
+  - {fileID: 21300000, guid: 22a3b137e387cea499d4f2251dae7616, type: 3}
+  - {fileID: 21300000, guid: b354a206c18aff94d83a8525b2f585e5, type: 3}
+  - {fileID: 21300000, guid: f56b870e880eeec44a0341c48250c2a6, type: 3}
+  - {fileID: 21300000, guid: ab257a39dd0c66d449a94f7653466853, type: 3}
+  - {fileID: 21300000, guid: 8157a34a1c301e0419fed320715bd0a0, type: 3}
+  - {fileID: 21300000, guid: e1442420b16f27a428c428ed7e3a25fd, type: 3}
+  - {fileID: 21300000, guid: 56011c4f2888a014995c37f8222c9c51, type: 3}
+  - {fileID: 21300000, guid: 895f1298fb7261048becc028a888c2c5, type: 3}
+  - {fileID: 21300000, guid: f9da8883d240aa748b032e26b0fe6869, type: 3}
 --- !u!114 &332922267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,6 +397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7e14eecdb71fa44f81f07ca84b6c972, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextDay: {fileID: 11400000, guid: 7a3b15994ad7b084aa73e4b83465e40c, type: 2}
   student: {fileID: 0}
   studentInfo: {fileID: 0}
   index: 0

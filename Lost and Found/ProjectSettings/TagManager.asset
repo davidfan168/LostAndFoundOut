@@ -6,6 +6,8 @@ TagManager:
   tags:
   - DisplayImage
   - CharacterButton
+  - DialogueButton
+  - StorageButton
   layers:
   - Default
   - TransparentFX

@@ -25,17 +25,16 @@ public class DataManager : MonoBehaviour
     public List<GameObject> items;
     public List<GameObject> students;
 
+    public GameEvent startDrag;
+
     public void Initialize()
     {
-        day = 2;
+        day = 1;
     }
 
     public void addItems(List<GameObject> newItems)
     {
-        foreach (GameObject item in newItems)
-        {
-            items.Add(item);
-        }
+        items = newItems;
     }
 
     public void setStudents(List<GameObject> students)

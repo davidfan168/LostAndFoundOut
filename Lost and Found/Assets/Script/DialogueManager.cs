@@ -5,6 +5,7 @@ using UnityEngine;
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance;
+    public GameEvent nextDay;
     private void Awake()
     {
         if (DialogueManager.Instance == null)
@@ -38,7 +39,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            DayGenerator.Instance.NextDay();
+            nextDay.Raise();
         }
     }
 
@@ -60,7 +61,7 @@ public class DialogueManager : MonoBehaviour
         index = 0;
         if (studentInfo.lostItem == null)
         {
-            sentences.Add("Did I ")
+            sentences.Add("Did I just see someone walk away with my item? You are so terrible at your job!");
         }
         else
         {
@@ -86,18 +87,30 @@ public class DialogueManager : MonoBehaviour
     private void GenerateForDay1(Item item)
     {
         sentences.Add("I lost my " + item.itemName + ". ");
-        sentences.Add("Its color is " + item.color + ". ");
+        sentences.Add("It's " + item.color + ". ");
     }
 
     private void GenerateForDay2(Item item)
     {
         sentences.Add("I lost my " + item.itemName + ". ");
-        sentences.Add("Its color is " + item.color + ". ");
+        sentences.Add("It's " + item.color + ". ");
+        sentences.Add("It is " + item.type + ".");
+        if (item.properties.Count > 0)
+        {
+            sentences.Add(item.properties[0]);
+        }
     }
     private void GenerateForDay3(Item item)
     {
         sentences.Add("I lost my " + item.itemName + ". ");
-        sentences.Add("Its color is " + item.color + ". ");
+        sentences.Add("It's " + item.color + ". ");
+        sentences.Add("It is " + item.type + ".");
+        sentences.Add("I lost it at " + item.location);
+        sentences.Add("I lost it during " + item.date);
+        if (item.properties.Count > 0)
+        {
+            sentences.Add(item.properties[0]);
+        }
     }
 
     public string GetNextSentence()
