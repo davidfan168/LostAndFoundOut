@@ -26,12 +26,21 @@ public class DialogueManager : MonoBehaviour
     public int index;
     public List<string> sentences;
 
+    public GameEvent nextCharacter;
+
     public void PrepDialogue()
+    {
+        GetAndSaveStudent();
+        nextCharacter.Raise();
+        GenerateSentences(studentInfo);
+    }
+
+    private void GetAndSaveStudent()
     {
         student = DataManager.Instance.students[0];
         DataManager.Instance.students.RemoveAt(0);
+        DataManager.Instance.currentStudent = student;
         studentInfo = student.GetComponent<Student>();
-        GenerateSentences(studentInfo);
     }
 
     private void GenerateSentences(Student studentInfo)

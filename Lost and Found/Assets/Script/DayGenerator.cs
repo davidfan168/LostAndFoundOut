@@ -19,7 +19,7 @@ public class DayGenerator : MonoBehaviour
 
     private void GenerateForDay1()
     {
-        int trueStudentCount = 1;
+        int trueStudentCount = 2;
         int fakeItemCount = 0;
         int lyingStudentCount = 0;
 
@@ -45,13 +45,15 @@ public class DayGenerator : MonoBehaviour
     }
     private void GenerateStudentAndItem()
     {
-        GameObject std = StudentGenerator.Instance.GenerateStudent();
+        GameObject student = StudentGenerator.Instance.GenerateStudent();
         GameObject item = ItemGenerator.Instance.getRandomItem();
 
-        std.GetComponent<Student>().lostItem = item;
+        Student std = student.GetComponent<Student>();
+        std.lostItem= item;
+        std.honest = true;
 
         items.Add(item);
-        students.Add(std);
+        students.Add(student);
     }
 
     private void GenerateFakeItem()
@@ -64,13 +66,17 @@ public class DayGenerator : MonoBehaviour
 
     private void GenerateLyingStudent()
     {
-        GameObject std;
+        GameObject student;
         do
         {
-            std = StudentGenerator.Instance.GenerateStudent();
+            student = StudentGenerator.Instance.GenerateStudent();
         }
-        while (NotValidStudent(std));
-        students.Add(std);
+        while (NotValidStudent(student));
+
+        Student std = student.GetComponent<Student>();
+        std.honest = false;
+
+        students.Add(student);
     }
 
     private bool NotValidStudent(GameObject std)

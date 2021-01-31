@@ -237,9 +237,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items:
-  - {fileID: 4196821487910835447, guid: ae95001dc77a11e4e8c33767b80a2795, type: 3}
-  - {fileID: 8414957673683128677, guid: 5f52f9d3861a9bb49abd47b257535211, type: 3}
-  - {fileID: 7594372393308952184, guid: 59dc7d9b135283a47abfaa8c9531b99e, type: 3}
+  - {fileID: 1182412723431667085, guid: 1d25fed4fdd7915409bad098e8206cae, type: 3}
+  - {fileID: 3075174710423210648, guid: 0886d0f8ec7d27f4ea3c6f4b673422d0, type: 3}
+  - {fileID: 8638328772616523877, guid: 418a6d891fcbacb42a1c6a86443d6003, type: 3}
 --- !u!4 &332922264
 Transform:
   m_ObjectHideFlags: 0
@@ -285,6 +285,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   studentTemplate: {fileID: 2388804529866059181, guid: 023acf442e4719142901c73511f6d4b0,
     type: 3}
+  headImages:
+  - {fileID: 21300000, guid: bd21b193481931f4ab4fbbe8da3b76d6, type: 3}
+  - {fileID: 21300000, guid: c032fb963003328429c5a6710f1a3b6f, type: 3}
+  - {fileID: 21300000, guid: 05cff2fb5a2df8f44807feb40914539e, type: 3}
+  hairImages:
+  - {fileID: 21300000, guid: 644cbff308e850541b8b972a71b54394, type: 3}
+  - {fileID: 21300000, guid: 5c92424a0e638b846bef3b9c6b8e0284, type: 3}
+  - {fileID: 21300000, guid: 80e57a6cdce2166478a551d934775b81, type: 3}
+  - {fileID: 21300000, guid: 51a591b966979474a8a1a1875d48cb29, type: 3}
+  - {fileID: 21300000, guid: 7b1472f942cb74044a52eb2ebf1e2ca9, type: 3}
+  - {fileID: 21300000, guid: 4ba6e6e546e656f40b7e0fc13fd282b3, type: 3}
+  - {fileID: 21300000, guid: bb9ad4adb3577664eaedb5c9435d6a67, type: 3}
+  - {fileID: 21300000, guid: cd11b1129c3444940bf18a340148d836, type: 3}
+  - {fileID: 21300000, guid: 37f613f17b4eae64dbbf5f58c17e5a26, type: 3}
+  - {fileID: 21300000, guid: b3a04954611858140ae0032abbdafb06, type: 3}
+  - {fileID: 21300000, guid: 3b65e8a044ab9704b87a6083b172e649, type: 3}
+  - {fileID: 21300000, guid: 5f757d8fda9162842bfd55537f59ad85, type: 3}
+  faceImages:
+  - {fileID: 21300000, guid: 30df78ec12da49048b205d269633b13a, type: 3}
+  - {fileID: 21300000, guid: d0f1446170fa2d24380985aa805573cd, type: 3}
+  - {fileID: 21300000, guid: eb531e023b957b3468aa3e7bd3702a0c, type: 3}
+  - {fileID: 21300000, guid: d8b2e0db6be2b87408268c9a59efaa35, type: 3}
+  - {fileID: 21300000, guid: b46d8d8f9c290244f9f9b4fd92c45346, type: 3}
+  - {fileID: 21300000, guid: 3299ffdd29a1c0846b3b93f39ada7ad5, type: 3}
+  - {fileID: 21300000, guid: f2f744c85e9c5d34296a09d4deba7934, type: 3}
+  - {fileID: 21300000, guid: 64ee5db0f5210bc4785d997a20fa43b8, type: 3}
+  - {fileID: 21300000, guid: c3ba2de7ef848f84685b7b003ceb3d51, type: 3}
+  - {fileID: 21300000, guid: ba639b4d079fa4f45be5f92489071d27, type: 3}
+  - {fileID: 21300000, guid: 1a9ae0c51748c124ba22291ab723fe87, type: 3}
+  - {fileID: 21300000, guid: 0699f96cadc507c44937dbb451c84ccc, type: 3}
 --- !u!114 &332922267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,6 +331,7 @@ MonoBehaviour:
   studentInfo: {fileID: 0}
   index: 0
   sentences: []
+  nextCharacter: {fileID: 0}
 --- !u!1 &726669048
 GameObject:
   m_ObjectHideFlags: 0

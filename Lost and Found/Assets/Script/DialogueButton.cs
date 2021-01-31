@@ -45,6 +45,14 @@ public class DialogueButton : MonoBehaviour
         }
     }
 
+    public void SpecificMessage(string message)
+    {
+        currentState = MessageState.Empty;
+        sentence = message;
+        currentState = MessageState.Typing;
+        co = StartCoroutine(DisplayMessage(sentence));
+    }
+
     IEnumerator DisplayMessage(string message)
     {
         int i = 1;

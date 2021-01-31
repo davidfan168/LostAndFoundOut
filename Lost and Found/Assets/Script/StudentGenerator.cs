@@ -72,6 +72,9 @@ public class StudentGenerator : MonoBehaviour
     }
 
     public GameObject studentTemplate;
+    public List<Sprite> headImages;
+    public List<Sprite> hairImages;
+    public List<Sprite> faceImages;
 
     public GameObject GenerateStudent()
     {
@@ -81,6 +84,10 @@ public class StudentGenerator : MonoBehaviour
         int index = Random.Range(0, names.Length);
         name = names[index];
         studentInfo.name = name;
+
+        studentInfo.head = headImages[Random.Range(0, headImages.Count)];
+        studentInfo.head = hairImages[Random.Range(0, hairImages.Count)];
+        studentInfo.head = faceImages[Random.Range(0, faceImages.Count)];
 
         return student;
     }
