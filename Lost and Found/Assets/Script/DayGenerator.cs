@@ -39,6 +39,11 @@ public class DayGenerator : MonoBehaviour
         {
             GenerateThirdDay();
         }
+        
+        if (day > 3)
+        {
+            GenerateThirdDay();
+        }
 
     }
 

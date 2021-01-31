@@ -10,6 +10,7 @@ public class DescriptionController : MonoBehaviour
     public Text location;
     public Text color;
     public Text type;
+    public Image display;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +29,7 @@ public class DescriptionController : MonoBehaviour
         itemName.text = "Item: " + itemInfo.itemName;
         date.text = "Date:" + itemInfo.date;
         location.text = "Location:" + itemInfo.location;
-        color.text = "Color: " + color;
-        type.text = "Type:" + type;
+        color.text = "Color: " + itemInfo.color;
+        type.text = "Type:" + itemInfo.type;
     }
 }

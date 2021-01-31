@@ -20,4 +20,9 @@ public class SceneTransition : MonoBehaviour
     {
         SceneManager.LoadScene("LostAndFound");
     }
+
+    public void instructions()
+    {
+        SceneManager.LoadScene("Instructions");
+    }
 }
