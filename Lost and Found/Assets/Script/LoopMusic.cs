@@ -34,6 +34,8 @@ public class LoopMusic : MonoBehaviour
 
         temp = (long)endLoop * sampleRate / 1000L;
         endSamples = (int)temp;
+
+        DontDestroyOnLoad(gameObject);
     }
 
     // Start is called before the first frame update
