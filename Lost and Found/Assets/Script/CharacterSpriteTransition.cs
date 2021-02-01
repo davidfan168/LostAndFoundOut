@@ -10,6 +10,14 @@ public class CharacterSpriteTransition : MonoBehaviour
     public Image face;
     public Image body;
 
+    public AudioClip clip;
+    private AudioSource source;
+
+    private void Awake()
+    {
+        source = gameObject.GetComponent<AudioSource>();
+    }
+
     public void UpdateImage()
     {
         Debug.Log("Updating Image");
@@ -18,5 +26,7 @@ public class CharacterSpriteTransition : MonoBehaviour
         hair.sprite = currentStudent.hair;
         face.sprite = currentStudent.face;
         body.sprite = currentStudent.body;
+
+        source.PlayOneShot(clip, 1);
     }
 }
